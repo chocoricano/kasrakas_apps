@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="#B5CB99">
+
+    <ImageButton
+        android:id="@+id/buttonImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/pelaporan"
+        android:scaleType="fitCenter"
+        android:background="#186F65"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:contentDescription="Button Image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonImageText"
+        app:layout_constraintHorizontal_bias="0.5" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pelaporan"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImage"
+        app:layout_constraintStart_toStartOf="@+id/buttonImage"
+        app:layout_constraintEnd_toEndOf="@+id/buttonImage"/>
+
+    <!-- Button 2 -->
+    <ImageButton
+        android:id="@+id/buttonImageText"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/status"
+        android:scaleType="fitCenter"
+        android:background="#186F65"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:contentDescription="Button Image Text"
+        app:layout_constraintStart_toEndOf="@+id/buttonImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Pelaporan"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImageText"
+        app:layout_constraintStart_toStartOf="@+id/buttonImageText"
+        app:layout_constraintEnd_toEndOf="@+id/buttonImageText"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
